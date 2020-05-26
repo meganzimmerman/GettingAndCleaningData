@@ -1,0 +1,16 @@
+activity_labels   : 6x2 data frame with integer in column 1 and character in column 2
+                    the integer in column 1 links to the activity class which is described in column 2 as walking, walking_upstairs, walking_downstairs, sitting, standing, laying 
+data_df			  : 10299 x 563 data frame which represents the 561-value feature vector of measurements for each observation, the label of the activity class, and the subject who took the measurement
+extracted_df	  : 10299 x 82 data frame which has all of the observations (NROWS) from the data_df but has colums limited to just the mean and standard deviations of each measurement type
+features		  : 561 x 2 data frame that includes the names of each of the 561-value feature vector
+label_vec		  : 10299 x 1 is a vector with the activity classes of each observation
+subject_vec       : 10299 x 1 is a vector with the subject integer who took each measurement/observation
+test_df           : 2947 x 561 data frame of raw x_test.txt data
+test_lbl          : 2947 x 1 data frame of raw y_test.txt data
+test_sub          : 2947 x 1 data frame of raw subjects_test.txt data 
+TidyData          : output data frame that contains 180x82 data frame with measuremetns fot he average of each variable for each subject and activity class
+train_df		  : 7352 x 561 data frame of raw x_train.txt data
+train_lbl		  : 7352 x 1 data frame of raw y_train.txt data
+train_sub         : 7352 x 1 data frame of raw subjects_train.txt data
+mean_cols         : integer vector of columns that contain mean values
+stdv_cols         : integer vector of columns that contain standard deviations
